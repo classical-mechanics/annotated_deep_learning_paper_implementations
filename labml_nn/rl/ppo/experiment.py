@@ -162,7 +162,7 @@ class Trainer:
 
         rewards = np.zeros((self.n_workers, self.worker_steps), dtype=np.float32)
         actions = np.zeros((self.n_workers, self.worker_steps), dtype=np.int32)
-        done = np.zeros((self.n_workers, self.worker_steps), dtype=np.bool)
+        done = np.zeros((self.n_workers, self.worker_steps), dtype=np.bool_)
         obs = np.zeros((self.n_workers, self.worker_steps, 4, 84, 84), dtype=np.uint8)
         log_pis = np.zeros((self.n_workers, self.worker_steps), dtype=np.float32)
         values = np.zeros((self.n_workers, self.worker_steps + 1), dtype=np.float32)
